@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f9b978;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.pbo.aplikasidesktoppenjualan.PlgController">
+    <children>
+        <Label layoutX="195.0" layoutY="38.0" text="Pelanggan" />
+
+        <TableView fx:id="tablePelanggan" layoutX="41.0" layoutY="90.0" prefHeight="250.0" prefWidth="518.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colNama" prefWidth="200.0" text="Nama" />
+                <TableColumn fx:id="colAlamat" prefWidth="243.0" text="Alamat" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="41.0" layoutY="333.0" text="ID Pelanggan" />
+        <TextField fx:id="txtIdPelanggan" layoutX="141.0" layoutY="329.0" prefWidth="100.0" />
+
+        <Label layoutX="41.0" layoutY="363.0" text="Nama" />
+        <TextField fx:id="txtNama" layoutX="81.0" layoutY="359.0" prefWidth="200.0" />
+
+        <Label layoutX="312.0" layoutY="363.0" text="Alamat" />
+        <TextField fx:id="txtAlamat" layoutX="354.0" layoutY="359.0" prefWidth="200.0" />
+
+        <Button fx:id="btnTambah" layoutX="41.0" layoutY="410.0" mnemonicParsing="false" onAction="#tambahPelanggan" text="Tambah" />
+        <Button fx:id="btnUbah" layoutX="161.0" layoutY="410.0" mnemonicParsing="false" onAction="#ubahPelanggan" text="Ubah" />
+        <Button fx:id="btnHapus" layoutX="281.0" layoutY="410.0" mnemonicParsing="false" onAction="#hapusPelanggan" text="Hapus" />
+
+        <Label layoutX="41.0" layoutY="440.0" text="Cari Pelanggan" />
+        <TextField fx:id="txtCari" layoutX="141.0" layoutY="436.0" prefWidth="200.0" onKeyReleased="#cariPelanggan" />
+    </children>
+</AnchorPane>
